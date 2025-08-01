@@ -1,0 +1,72 @@
+.social-icon {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 7px;
+  border-radius: 8px;
+  margin: 3px;
+  color: #555;
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  background-color: #f0f0f0;
+}
+
+.email-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.email-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.label-light {
+  color: #a8b4c1;
+  font-size: 13px;
+  font-weight: 420;
+}
+
+.primary-btn.small {
+  background-color: #e5eaef;
+  color: #8b8282;
+  padding: 10px 20px;
+  border: 2px solid #dadee5;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.spacer {
+  flex: 1;
+}
+.primary-btn.small {
+  padding: 4px 10px;
+  font-size: 10px;
+  border-radius: 3px;
+}
+.primary-btn:hover {
+  background-color: #4f5153;
+}
+
+.social-icon {
+  margin-right: 8px;
+}
+
+.social-icon:hover {
+  color: #007bff;
+}

@@ -1,0 +1,39 @@
+<div *ngIf="contact" class="profile-header">
+  <img [src]="contact.image" (error)="contact.image = 'assets/default-avatar.png'" alt="{{ contact.firstName }}" />
+  <div class="profile-name">
+    <h2>{{ contact.firstName }} {{ contact.lastName }}</h2>
+    <span>{{ contact.role }}</span>
+    <div class="contact-actions">
+      <button class="btn primary" style=" background-color: #3b91ed;">
+        <i class="fas fa-comment-dots"></i> Message
+      </button>
+      <i class="fas fa-phone social-icon"></i>
+      <i class="fas fa-video social-icon"></i>
+      <i class="fas fa-ellipsis-h social-icon"></i>
+    </div>
+  </div>
+</div>
+<div class="profile-details">
+<p *ngIf="contact?.bio"><strong>Bio:</strong> {{ contact.bio }}</p>
+  <p class="email-row">
+    <strong class="label-light">Email:</strong> {{ contact.email }}
+    <span class="spacer"></span>
+    <button class="primary-btn small">Primary</button>
+  </p>
+  <strong style="color: #c7c5c5; font-size: 12px; font-weight: 400;">Phone:</strong> {{ contact.phone }}
+
+  <p><strong class="label-light">Dial:</strong> {{ contact.dial }}</p>
+  <p><strong class="label-light">Meeting:</strong> <a [href]="contact.meeting" target="_blank">{{ contact.meeting }}</a>
+  </p>
+  <p class="email-row">
+    <strong class="label-light">Phone:</strong> {{ contact.phone }}
+    <span class="spacer"></span>
+    <button class="primary-btn small">Primary</button>
+  </p>
+  <p><strong class="label-light">Social:</strong>
+    <i class="fab fa-facebook social-icon"></i>
+    <i class="fab fa-pinterest social-icon"></i>
+    <i class="fab fa-twitter social-icon"></i>
+    <i class="fab fa-google social-icon"></i>
+  </p>
+</div>

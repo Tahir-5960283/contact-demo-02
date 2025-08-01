@@ -1,0 +1,76 @@
+.social-icon {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 7px;
+  border-radius: 8px;
+  margin: 3px;
+  color: #555;
+  /* light black */
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.search-input-wrapper input::placeholder {
+  font-weight: bold;
+  color: #555; /* Optional: dark grey color for placeholder */
+}
+.sidebar-header {
+  padding: 1rem;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-bar {
+  margin-top: 1rem;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.social-icon:hover {
+  background-color: #f0f0f0;
+}
+
+.search-bar {
+  margin-top: 1rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-input-wrapper input {
+  width: 100%;
+  padding: 0.5rem 2.5rem 0.5rem 0.75rem;
+  /* space on right for icon */
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.search-icon {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  /* so it doesn't block input clicks */
+  color: #888;
+}

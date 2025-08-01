@@ -1,0 +1,42 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "firstName": "Johanna",
+      "lastName": "Stevens",
+      "address": "123 Main Street, New York",
+      "phone": "439-582-1578",
+      "email": "johanna.stevens@gmail.com",
+      "image": "https://randomuser.me/api/portraits/women/44.jpg"
+    },
+    {
+      "id": 2,
+      "firstName": "Amit",
+      "lastName": "Patel",
+      "address": "456 Elm St, California",
+      "phone": "621-770-7689",
+      "email": "amit.patel@gmail.com",
+      "image": "https://randomuser.me/api/portraits/women/45.jpg"
+    }
+  ],
+  "email_addresses": [
+    {
+      "id": 1,
+      "contactId": 1,
+      "type": "work",
+      "email": "johanna.stevens@whiteui.store"
+    },
+    {
+      "id": 2,
+      "contactId": 1,
+      "type": "alternate",
+      "email": "j.stevens@ymsg.com"
+    },
+    {
+      "id": 3,
+      "contactId": 2,
+      "type": "work",
+      "email": "amit.work@example.com"
+    }
+  ]
+}
